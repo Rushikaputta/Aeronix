@@ -54,6 +54,7 @@ AI generates a clear, restricted explanation
 Response is displayed with a journey timeline
 
 🚫 What This Bot Does NOT Do
+
 ❌ No flight booking or cancellation
 
 ❌ No real-time flight tracking
@@ -83,3 +84,7 @@ Mobile app integration
 Airport-specific customization
 
 Integration with kiosks and digital signage
+
+Live demo
+
+https://chandhana827-aeronix---airport-ground-operations-ass-app-ezds5t.streamlit.app/
