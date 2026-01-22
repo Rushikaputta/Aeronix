@@ -1,117 +1,85 @@
-🛫 Project Overview
+✈️ AeroGuide – Airport Ground Operations & Passenger Flow Explainer Bot
+AeroGuide is a Generative AI–powered chatbot designed to help passengers clearly understand airport ground operations and passenger flow.
+It explains complex airport procedures in simple, easy-to-understand language, reducing confusion and improving the overall travel experience.
 
-Airport Ground Operations App is an interactive web application built using Python and Streamlit that visualizes, monitors, and manages operations happening on the airport ground. The app is designed to support airport staff, ground operations teams, and analysts by providing real-time or historical insights into activities such as aircraft movements, ground vehicle tracking, service schedules, and operational bottlenecks.
+🚩 Problem Statement
+Airport procedures such as check-in, security screening, boarding, and baggage claim are often confusing—especially for first-time flyers, senior citizens, and international travelers.
+Helpdesks and airport staff handle repetitive questions, leading to delays and inefficiency.
 
-This tool focuses on simplifying operational workflows, visualizing key metrics, and supporting data-driven decision making — all through a clean and intuitive dashboard interface.
+There is a need for a safe, informational AI system that explains airport processes without performing bookings or revealing sensitive operational details.
 
-🚀 Key Features
+💡 Solution Overview
+AeroGuide acts as an AI-based explanation assistant that:
 
-Although the precise features depend on what your implementation contains, Airport Ground Operations apps typically include the following:
+Explains airport procedures step-by-step
 
-🗺️ 1. Interactive Airport Map
+Provides a clear passenger journey timeline
 
-Displays an airport layout including runways, taxiways, gates, and parking stands.
+Supports multilingual responses
 
-Real-time plotting of aircraft on the ground (arriving, parked, departing).
+Handles common travel scenarios
 
-Ground vehicles such as baggage carts, fuel trucks, and tugs displayed with icons.
+Follows strict safety and ethical AI guidelines
 
-✈️ 2. Flight Turnaround Management
+The system is explanation-only and does not interact with real-time flight data or airport systems.
 
-Tracks incoming and outgoing flights.
+✨ Key Features
+🧭 Passenger Flow Explanation
+Explains check-in, security, boarding, immigration, and baggage claim processes.
 
-Calculates turnaround times.
+📍 Journey Timeline View
+Displays where each step fits in the overall airport journey.
 
-Highlights delays or operational inefficiencies.
+🌐 Multilingual Support
+Supports explanations in English and Indian regional languages (e.g., Hindi, Tamil, Telugu).
 
-🚛 3. Resource / Staff Allocation
+🧠 Scenario-Based Guidance
+Helpful for first-time flyers, late arrivals, transit passengers, and families.
 
-Shows availability and status of ground support vehicles.
+🔒 Safety-Restricted AI
+Prevents answers related to security bypass, restricted zones, or operational details.
 
-Lets users assign vehicles/staff to tasks (refueling, baggage unload, catering, etc.).
+⚡ Fast & Lightweight
+Designed for quick deployment and hackathon environments.
 
-Schedule visualization to avoid conflicts.
+🧱 System Architecture
+User enters a query
 
-📊 4. Operational Dashboards
+Relevant airport guideline text is retrieved
 
-KPIs: average turnaround time, service delays, gate occupancy, ground handling wait times.
+Query + context sent to Gemini Flash with a safe system prompt
 
-Charts & graphs: breakdown of operations by time of day, aircraft type, or airline.
+AI generates a clear, restricted explanation
 
-📍 5. Alerts & Notifications (if implemented)
+Response is displayed with a journey timeline
 
-Alerts for delayed services or runway incursions.
+🚫 What This Bot Does NOT Do
+❌ No flight booking or cancellation
 
-Operational warnings for staff.
+❌ No real-time flight tracking
 
-📁 6. Data Upload / Visualization
+❌ No security-sensitive or restricted information
 
-Upload CSV/JSON input datasets (e.g., flight schedules or vehicle logs).
+❌ No operational decision-making
 
-Visualize trends or patterns over time.
+This ensures safe and responsible AI usage.
 
-🔐 7. User Interface
+🎯 Use Cases
+Airport helpdesk assistance
 
-Sidebar filters (date, airline, flight number, terminal).
+First-time traveler guidance
 
-Hoverable elements with aircraft/vehicle details.
+Multilingual passenger support
 
-Tabs or sections for Maps, Analytics, and Reports
+Training and awareness tools
 
+Public information kiosks
 
-📦 Installation & Setup
+🚀 Future Enhancements
+Voice-based interaction
 
-Clone the repository
+Mobile app integration
 
-git clone https://github.com/<your-username>/airport-ground-operations.git
-cd airport-ground-operations
+Airport-specific customization
 
-
-Create and activate virtual environment
-
-python -m venv venv
-source venv/bin/activate        # macOS/Linux
-venv\Scripts\activate           # Windows
-
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Start the Streamlit app
-
-streamlit run app.py
-
-
-Then open the displayed localhost link in your browser to interact with the app.
-
-📝 Example Usage
-
-Select Date / Terminal
-
-Use the sidebar filters to narrow data for a specific date or terminal.
-
-View Ground Map
-
-Navigate to the “Map” tab to see the airport ground activities plotted in real time or historical mode.
-
-Explore Analytics
-
-Go to “Dashboard” to view metrics like average service times and delays.
-
-Generate Reports
-
-Export charts or tables as CSV or PDF for operational review meetings.
-
-🧩 Customization
-
-You can extend the app to include:
-
-Live API connections from real scheduling data
-
-Flight status & weather overlays
-
-Integration with airport operational systems (AODB, FIDS)
-
-Role-based access control for different user types
+Integration with kiosks and digital signage
